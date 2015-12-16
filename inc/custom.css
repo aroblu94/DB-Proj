@@ -1,0 +1,124 @@
+.hidden {
+	display: none;
+}
+
+.myalert {
+	float: none;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+
+.portlet-title.sublined:after {
+	content: "";
+	display: block;
+	position: relative;
+	z-index: 10;
+	width: 80px;
+	height: 1px;
+	margin: 20px 0 0;
+	background: #6685a4;
+}
+
+.portlet-title.sublined:before {
+	content: "";
+	display: block;
+	position: relative;
+	top: 4.7rem;
+	width: 100%;
+	height: 1px;
+	z-index: 9;
+	background: #e6e6e6;
+}
+
+.thumbnail-footer a {
+	color: #ffffff;
+}
+
+.myformcontrol {
+	width: 33.333333333333% !important;
+}
+
+.col-sm-4 {
+	padding-left: 0px !important;
+}
+
+.red {
+	color: #d74b4b;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.center {
+	float: left;
+	margin-left: 14rem;
+}
+
+.won {
+	background-color: #ffdd99;
+}
+
+.mycal {
+	width: 50% !important;
+	height: 40% !important;
+	margin: 0 auto;
+}
+
+.green {
+	color: #5cb85c;
+}
+
+.yellow {
+	color: #ffcc66;
+}
+
+.portlet-footer {
+	padding: 15px 10px;
+	border-top: 1px dotted #ccc;
+}
+
+.portlet-footer * {
+	margin-top: -5px;
+}
+
+.mycenter {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.event {
+	background-color: #337ab7 !important;
+}
+
+.cal-year-box [class*="span"], .cal-month-box [class*="cal-cell"] {
+    min-height: 60px !important;
+}
+
+.cal-month-day {
+    height: 60px !important;
+}
+
+.fadisabled {
+	color: #999;
+	cursor: not-allowed;
+	clickable: none;
+}
+
+.navbar-profile-avatar {
+	position: relative !important;
+	top: 5px !important;
+	left: 8px !important;
+}
+
+#usermenu {
+	cursor: pointer;
+}
+
+.btn[disabled] {
+	cursor: not-allowed !important;
+}
