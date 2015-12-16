@@ -46,6 +46,20 @@ switch($_POST[op].$_GET[op]) {
 			}
 		}
 	break;
+	
+	case "declorg":
+		if(isset($_GET[user])) {
+			$res = ssql("select decl_organizzatore(".$_GET[user].")");
+			if($res) {
+				$_SESSION[notify][type]="ok";
+				$_SESSION[notify][text]="Organizzatore declassato con successo.";
+			}
+			else {
+				$_SESSION[notify][type]="err";
+				$_SESSION[notify][text]="Errore! Organizzatore non declassato, riprovare. Se il problema persiste contattare l'amministratore.";			
+			}
+		}
+	break;
 
 	case "read":
 		if(isset($_GET[id2read])) {
@@ -60,7 +74,7 @@ switch($_POST[op].$_GET[op]) {
 ob_start();
 
 # Ciclo gli utenti
-$res = sql("select * from utenti where id>2");
+$res = sql("select * from utenti where id>2 and id<>".$_SESSION[User2decide][id]);
 $count=0;
 while($u = pg_fetch_array($res)) {
 	$nome = $u[nome]." ".$u[cognome];
@@ -75,10 +89,10 @@ while($u = pg_fetch_array($res)) {
 	}
 	if(ssql("select get_org(".$u[id].")")>2) {
 		$cert="";
-		$setorg="<br><br><a href='admin_utenti.php?op=makeorg&user=".$u[id]."' class='btn btn-warning btn-sm btn-sm'>Rendi organizzatore</a>";
+		$setorg="<br><br><a href='admin_utenti.php?op=makeorg&user=".$u[id]."' class='btn btn-warning btn-sm btn-sm'>Promuovi</a>";
 	}
 	else {
-		$setorg="";
+		$setorg="<br><br><a href='admin_utenti.php?op=declorg&user=".$u[id]."' class='btn btn-warning btn-sm btn-sm'>Declassa</a>";
 		$cert="<i class='fa fa-certificate right'></i>";
 	}
 	# Tornei a cui partecipa l'utente

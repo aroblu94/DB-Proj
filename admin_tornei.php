@@ -78,8 +78,8 @@ ob_start();
 
 # Ciclo i tornei
 if(!isset($_SESSION[adminUser][id])) {
-	$where="and t.admin=".$_SESSION[User2decide][id]."";
-	$where1="where admin=".$_SESSION[User2decide][id]."";
+	$where="and t.admin=".$_SESSION[trustedUser][id]."";
+	$where1="where admin=".$_SESSION[trustedUser][id]."";
 }
 
 $res = sql("select t.id as id,
@@ -99,8 +99,8 @@ $res = sql("select t.id as id,
 				from torneo t 
 					left join tipo_torneo ty on ty.id=t.tipo
 					left join utenti u on u.id=t.admin
-				where t.data_fine>now()
-					or t.data_fine is null
+				where (t.data_fine>now()
+					or t.data_fine is null)
 				".$where."
 				order by data_inizio asc");
 $count=0;
@@ -149,7 +149,7 @@ while($t = pg_fetch_array($res)) {
 }
 
 if(!$list)
-	echo "No tournments yet.";
+	echo "Non hai organizzato nessun torneo.";
 
 echo $list;
 

@@ -15,7 +15,7 @@ function getNotifiche() {
 		if(strpos($n[titolo], 'Nuova') !== false) {
 			# notifica all'organizzatore
 			$icon="<span class=notification-icon><i class=\"fa fa-warning text-warning\"></i></span>";
-			$link="admin_giocatori.php?torneo=".$n[nome_torneo]."&ed=".$n[ed_torneo]."&gamers=1&op=read&id2read=".$n[id];
+			$link="admin_giocatori.php?torneo=".$n[idtorneo]."&gamers=1&op=read&id2read=".$n[id];
 		}
 		else if(strpos($n[titolo], 'annullato') !== false) {
 			# notifica annullamento torneo

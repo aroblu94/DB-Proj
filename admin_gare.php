@@ -104,7 +104,7 @@ if(isset($_GET[torneo])) {
 	if($end>0) {
 		$res=sql("select concat(u.nome,' ',u.cognome,' ') as winner
 					from utenti u
-						join vince v on u.id=v.utente
+						join vince v on u.id=v.IDutente
 					where v.IDtorneo='".$_GET[torneo]."'");
 		$vincitori="";
 		while($v=pg_fetch_array($res)) {

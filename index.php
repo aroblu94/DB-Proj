@@ -11,6 +11,10 @@ switch ($_GET[op].$_POST[op]) {
 		unset($_COOKIE['user']);
 		setcookie('user', null);
 		pg_close($_SESSION[conn]);
+		unset($_SESSION[User2decide]);
+		unset($_SESSION[loggedUser]);
+		unset($_SESSION[trustedUser]);
+		unset($_SESSION[adminUser]);
 		session_unset();
 		session_destroy();
 		header("location:index.php");
