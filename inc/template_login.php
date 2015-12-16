@@ -13,7 +13,7 @@ checkUser($sononellaindex);
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<meta name="author" content="Aronne Brivio">>
+	<meta name="author" content="Aronne Brivio">
   <link rel="shortcut icon" type="image/x-icon" href="../inc/img/favicon.ico"/>
   <title>Login</title>
 	<!-- Google Font: Open Sans -->

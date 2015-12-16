@@ -262,7 +262,7 @@ if(isset($_GET[torneo])) {
 		$c=1;
 		while($g=pg_fetch_array($res)) {
 			BSnum("gioc$c", $g[nome]." ".$g[cognome], $g[risultato]);
-			hidden($g[username], "g$c");
+			hidden($g[id], "g$c");
 			$c++;
 		}
 		BSbutton("Inserisci");
