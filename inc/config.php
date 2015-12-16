@@ -7,7 +7,7 @@ session_start();
 
 $_SESSION[debug]=0;
 
-$dbhost="localhost";
+$dbhost="54.175.62.240";
 
 $db="aronne";
 
