@@ -134,6 +134,7 @@ checkUser($sononellaindex);
 	<script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
 
 	<script src="../inc/js/custom_drop.js"></script>
+	<script src="../inc/js/alert-webapp-ffos.js"></script>
 
 	<?php echo $ADDjs; ?>
 

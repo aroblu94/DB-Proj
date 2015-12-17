@@ -148,6 +148,7 @@ checkUser($sononellaindex);
 	<script src="../deps/mvp-theme/global/js/mvpready-helpers.js"></script>
 
 	<script src="../inc/js/custom_drop.js"></script>
+	<script src="../inc/js/alert-webapp-ffos.js"></script>
 
 	<?php echo $ADDjs; ?>
 
