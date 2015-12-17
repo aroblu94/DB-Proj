@@ -31,5 +31,6 @@
 	},
 	"chrome": {
 		"navigation": true
-	}
+	},
+	"fullscreen": "true"
 }
