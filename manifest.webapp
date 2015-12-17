@@ -28,9 +28,5 @@
 	  "push": {
 		"description": "Required for being updated with new articles from the blog"  
 	  }
-	},
-	"chrome": {
-		"navigation": true
-	},
-	"fullscreen": "true"
+	}
 }
