@@ -15,6 +15,7 @@ checkUser($sononellaindex);
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="Aronne Brivio">
+	<meta name="theme-color" content="#FF9500">
 
 	<link rel="icon" type="image/x-icon" href="../inc/img/favicon.ico"/>
 	<title>
