@@ -1,0 +1,13 @@
+AMMINISTRATORE
+aaron:aaron
+
+ORGANIZZATORE
+orga:nizza
+
+UTENTI
+foo:bar
+mrossi:mr
+foobar:foobar
+
+[Per gli altri utenti la password è uguale al nome utente
+Es. fede:fede]

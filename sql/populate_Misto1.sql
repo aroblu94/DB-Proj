@@ -1,0 +1,141 @@
+-- 4
+-------------
+-- MISTO 1 --
+-------------
+-- Gironi
+insert into girone (numero, data_inizio, data_fine, num_giocatori, num_gare, IDtorneo) values (1, '2014-10-13', '2014-10-22', 5, 10, 2);
+insert into girone (numero, data_inizio, data_fine, num_giocatori, num_gare, IDtorneo) values (2, '2014-10-13', '2014-10-22', 5, 10, 2);
+insert into girone (numero, data_inizio, data_fine, num_giocatori, num_gare, IDtorneo) values (3, '2014-10-13', '2014-10-22', 5, 10, 2);
+
+-- Gare
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-13', null, 1, 2, 16);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-18', null, 1, 2, 14);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-17', null, 1, 2, 16);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-20', null, 1, 2, 3);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-19', null, 1, 2, 3);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-14', null, 1, 2, 14);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-16', null, 1, 2, 16);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-15', null, 1, 2, 14);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-21', null, 1, 2, 11);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-22', null, 1, 2, 16);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-15', null, 2, 2, 13);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-16', null, 2, 2, 8);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-14', null, 2, 2, 8);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-22', null, 2, 2, 13);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-20', null, 2, 2, 5);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-21', null, 2, 2, 8);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-17', null, 2, 2, 4);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-18', null, 2, 2, 4);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-13', null, 2, 2, 4);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-19', null, 2, 2, 8);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-15', null, 3, 2, 10);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-16', null, 3, 2, 15);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-21', null, 3, 2, 15);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-22', null, 3, 2, 15);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-14', null, 3, 2, 15);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-19', null, 3, 2, 17);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-18', null, 3, 2, 17);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-13', null, 3, 2, 9);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-17', null, 3, 2, 17);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-20', null, 3, 2, 6);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-23', 1, null, 2, 16);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-24', 1, null, 2, 4);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-25', 1, null, 2, 15);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-26', 1, null, 2, 3);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-27', 1, null, 2, 10);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-28', 1, null, 2, 5);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-29', 1, null, 2, 14);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-30', 2, null, 2, 14);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-10-31', 2, null, 2, 4);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-11-01', 2, null, 2, 15);
+insert into gara (data, fase, girone, IDtorneo, vincitore) values ('2014-11-02', 3, null, 2, 15);
+
+-- partecipanti
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (16, '73', '3', '4');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (14, '73', '0', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (14, '74', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (12, '74', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (12, '75', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (16, '75', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (3, '76', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (12, '76', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (11, '77', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (3, '77', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (3, '78', '0', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (14, '78', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (3, '79', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (16, '79', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (11, '80', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (14, '80', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (12, '81', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (11, '81', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (11, '82', '0', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (16, '82', '3', '4');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (13, '83', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (7, '83', '0', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (8, '84', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (13, '84', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (7, '85', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (8, '85', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (5, '86', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (13, '86', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (5, '87', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (7, '87', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (5, '88', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (8, '88', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (13, '89', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (4, '89', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (4, '90', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (7, '90', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (4, '91', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (5, '91', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (8, '92', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (4, '92', '0', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (10, '93', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (6, '93', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (6, '94', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (15, '94', '3', '4');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (15, '95', '3', '4');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (10, '95', '0', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (15, '96', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (9, '96', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (15, '97', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (17, '97', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (6, '98', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (17, '98', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (17, '99', '3', '4');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (10, '99', '0', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (9, '100', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (10, '100', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (9, '101', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (17, '101', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (9, '102', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (6, '102', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (16, '103', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (1, '103', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (4, '104', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (17, '104', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (15, '105', '3', '4');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (11, '105', '0', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (6, '106', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (3, '106', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (10, '107', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (8, '107', '0', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (5, '108', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (9, '108', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (14, '109', '3', '3');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (13, '109', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (14, '110', '3', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (16, '110', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (4, '111', '3', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (5, '111', '0', '0');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (15, '112', '3', '4');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (10, '112', '0', '2');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (14, '113', '0', '1');
+insert into partecipa_a (IDutente, IDgara, punteggio, risultato) values (15, '113', '4', '2');
+
+-- Termino il torneo
+select set_fine(2);
+
+-- inserisco il vincitore
+select ins_vincitore(2);
